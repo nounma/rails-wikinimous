@@ -1,0 +1,11 @@
+<h1>Articles#show</h1>
+<h1><%= @article.title %></h1>
+
+<p><%= @article.content %></p>
+
+
+<p><%= link_to "all the articles", articles_path %></p>
+
+<p><%= link_to "edit this article", edit_article_path(@article) %></p>
+
+<p><%= link_to "delete this article", article_path(@article), method: :delete %></p>
